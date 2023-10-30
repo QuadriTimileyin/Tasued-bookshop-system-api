@@ -13,6 +13,12 @@ let authRouter = require("./routes/auth");
 
 let app = express();
 
+
+app.get('/', (req, res) => {
+    res.send('Hello World')
+  })
+  
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 
